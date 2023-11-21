@@ -6,7 +6,6 @@ Setup configuration for `mktheapidocs`.
 """
 from os import path
 
-import versioneer
 
 try:
     from setuptools import setup
@@ -28,7 +27,7 @@ __copyright__ = "Copyright 2020, Jonathan Gray"
 setup(
     name="mknotebooks",
     version=1.0,
-    cmdclass=versioneer.get_cmdclass(),
+    # cmdclass=versioneer.get_cmdclass(),
     entry_points={"mkdocs.plugins": ["mknotebooks = mknotebooks.plugin:Plugin"]},
     description="Plugin for mkdocs to generate markdown documents from jupyter notebooks.",
     long_description=long_description,
