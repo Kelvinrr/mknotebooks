@@ -3,12 +3,12 @@
 
 {% block header %}
 {{ super() }}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script>
 (function() {
   function addWidgetsRenderer() {
     var requireJsScript = document.createElement('script');
-    requireJsScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js';
+    requireJsScript.src = 'https://code.jquery.com/jquery-3.7.1.min.js';
 
     var mimeElement = document.querySelector('script[type="application/vnd.jupyter.widget-view+json"]');
     var jupyterWidgetsScript = document.createElement('script');
