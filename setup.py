@@ -27,7 +27,7 @@ __copyright__ = "Copyright 2020, Jonathan Gray"
 
 setup(
     name="mknotebooks",
-    version=versioneer.get_version(),
+    version=1.0,
     cmdclass=versioneer.get_cmdclass(),
     entry_points={"mkdocs.plugins": ["mknotebooks = mknotebooks.plugin:Plugin"]},
     description="Plugin for mkdocs to generate markdown documents from jupyter notebooks.",
